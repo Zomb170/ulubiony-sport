@@ -1,0 +1,89 @@
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button{
+    all: unset;
+}
+
+header{
+    padding: 1em 2em;
+    border-bottom: 2px solid #66f;
+    margin-bottom: 4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.btn{
+    text-align: center;
+    font-size: 3rem;
+    color: #66f;
+    border: 2px solid #66f;
+    background-color: #fff;
+    padding: 1em;
+    transition: .3s;
+    cursor: pointer;
+    border-radius: .5em;
+    text-decoration: none;
+}
+
+.btn--small{
+    font-size: 2em;
+}
+
+.btn:hover{
+    background-color: #66f;
+    color: #fff;
+    box-shadow: 5px 5px 100px #66f ;
+}
+
+.social_networks{
+    display: flex;
+    gap: 1em;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact img{
+    height: 3em;
+}
+
+.sidebar{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 1em;
+    height: 80%;
+    width: 20vw;
+    background-color: #fff;
+    flex-direction: column;
+    gap: 1em;
+    transform: translateX(-100%);
+    transition: .7s ease-in-out;
+    position: absolute;
+
+}
+
+.sidebar.active{
+    transform: translateX(0%);
+}
+
+
+.text{
+    border-radius: 0.5em;
+    margin: 1em;
+    background-color: #66f;
+    border: 1em solid #66f;
+}
+
+.content img{
+    margin-left: 5em;
+    max-width: 80%;
+    object-fit: cover;  
+}   
